@@ -10,7 +10,7 @@ The model of the application is as follows:
 
 The application code is incomplete, the idea is to complete it taking into account the following steps.
 
-1. Complete de class `Transaction` taking into account the following requirements:
+1. Complete the class `Transaction` taking into account the following requirements:
     - The class should have a constant `SELL` of type `int` with value `1`.
     - The class should have a constant `SUPPLY` of type `int` with value `2`.
     - The class should have an `__init__` method that receives the following parameters:
@@ -30,7 +30,7 @@ The application code is incomplete, the idea is to complete it taking into accou
 
         In the `__init__` method the class should initialize the attributes `isbn`, `title`, `sale_price`, `purchase_price` and `quantity` with the values received as parameters.
     - The class should have an attribute `transactions` of type `list[Transaction]` that should be initialized as an empty list.
-    - The class should have an instance method `sell` that receives a parameter `quantity` of type `int` and does the following:
+    - The class should have an instance method `sell` that receives a parameter `copies` of type `int` and does the following:
         - If the parameter `copies` is greater than the `quantity` attribute of the book, the method should return `False`.
         - Otherwise, the method decreases the `quantity` attribute of the book by the value of the parameter `copies` and adds a new `Transaction` object to the `transactions` list with the type `Transaction.SELL` and the number of `copies` sold.
         - The method should return `True`.
