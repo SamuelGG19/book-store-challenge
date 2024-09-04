@@ -32,7 +32,7 @@ El código de la aplicación está incompleto, la idea es completarlo teniendo e
 
         En el método `__init__`, la clase debe inicializar los atributos `isbn`, `title`, `sale_price`, `purchase_price` y `quantity` con los valores recibidos como parámetros.
     - La clase debe tener un atributo `transactions` de tipo `list[Transaction]` que debe inicializarse como una lista vacía.
-    - La clase debe tener un método de instancia `sell` que reciba un parámetro `quantity` de tipo `int` y haga lo siguiente:
+    - La clase debe tener un método de instancia `sell` que reciba un parámetro `copies` de tipo `int` y haga lo siguiente:
         - Si el parámetro `copies` es mayor que el atributo `quantity` del libro, el método debe devolver `False`.
         - De lo contrario, el método disminuye el atributo `quantity` del libro por el valor del parámetro `copies` y agrega un nuevo objeto `Transaction` a la lista `transactions` con el tipo `Transaction.SELL` y el número de `copies` vendidas.
         - El método debe devolver `True`.
@@ -45,8 +45,8 @@ El código de la aplicación está incompleto, la idea es completarlo teniendo e
         ```
         ISBN: {isbn}
         Title: {title}
-        Sale price: {sale_price}
-        Purchase price: {purchase_price}
+        Sale Price: {sale_price}
+        Purchase Price: {purchase_price}
         Quantity: {quantity}
         ```
 
